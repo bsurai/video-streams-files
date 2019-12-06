@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#v1').prop('muted',true).play()
+            $('#v2').prop('muted',true).play()
+        }).delay(2000).jquery('#v1').prop('muted',false)
+        ;
+    </script>
+</head>
+<body>
+    <video id="v2" loop="true" autoplay="autoplay" controls src="http://localhost:3000/youtube/file"></video>
+    <video id="v1" loop="true" autoplay="autoplay" controls src="http://localhost:3000/youtube/stream"></video>
+</body>
+</html>
